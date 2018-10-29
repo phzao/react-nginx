@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  frontend:
+    build: .
+    container_name: dati-react
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - "80:80"
