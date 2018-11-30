@@ -3,7 +3,7 @@ version: '3'
 services:
   frontend:
     build: .
-    container_name: dati-react
+    container_name: react-nginx
     volumes:
       - /app/node_modules
       - .:/app
